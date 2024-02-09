@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    border: none; outline: none; text-decoration: none;
+}
+*::selection {
+    color: #fff;
+    background-color: #240046;
+}
+html {
+    font-size: 62.5%;
+}
+.btn {
+    display: block;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: #dcacfa; color: #240046;
+    border: 0.3rem solid black; border-radius: 2rem;
+    cursor: pointer;
+}
+.btn:hover {
+    background-image: linear-gradient(to top left, #7B2CBF,#3C096C); color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .c_card, #login_form {
+        width: 85%;
+    }
+    #cart table button {
+        font-size: 1rem;
+        margin: 0.5rem 0.3rem;
+        padding: 0.1rem 0.5rem;
+    }
+    #cart table th {
+        font-size: 1.3rem;
+    }
+    #cart table td {
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 850px) {
+    .c_card, #login_form {
+        width: 70%;
+    }
+}

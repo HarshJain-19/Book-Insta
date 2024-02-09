@@ -1,0 +1,50 @@
+@import url(./all.css);
+
+/*Yobs Credit Card.html*/
+.c_card {
+    width: 35%;
+    margin: 5rem auto;
+}
+.c_card fieldset {
+    width: 100%;
+    padding: 3rem;
+    border: 0.3rem solid peru; background-color: #fff;
+}
+.c_card legend {
+    font-size: 3.5rem;
+    color: rgb(172, 87, 3);
+    text-align: center;
+}
+.c_card input::placeholder {
+    color: peru;
+}
+.c_card label {
+    font-size: 2rem;
+    color: firebrick;
+}
+.c_card label input {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    padding: 1rem;
+    width: 100%;
+    margin: 1rem auto 2rem;
+    color: firebrick;
+    border: 0.3rem solid peru;
+}
+#cvv:out-of-range {
+    border: 0.35rem solid red;
+    outline: none;
+}
+#cvv:in-range {
+    border: 0.35rem solid limegreen;
+    outline: none;
+}
+.c_card button {
+    display: block; margin: 2rem auto; padding: 1.5rem;
+    font-size: 3rem; letter-spacing: 0.77rem;
+    background-color: peru; color: white;
+    border: 0.5rem solid;
+}
+.c_card button:hover {
+    background-color: #fff; color: peru;
+}

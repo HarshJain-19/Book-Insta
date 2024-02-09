@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Book-Insta 📚</title>
+        <link rel="icon" href="./Media/favicon book.gif" />
+        <link rel="stylesheet" href="./Styles/style home.css" />
+    </head>
+    <body id="body_home">
+        <div id="c_name">
+            <h1>Book-Insta</h1>
+            <h2>your online books store</h2>
+            <a href="#login_form"><button>Register</button></a>
+        </div>
+        <div id="login_form">
+            <form
+                action="./Components/Yobs Profile and Cart.html" 
+                onsubmit="submitLogin()"
+            >
+                <a href="#" class="close">&times;</a>
+                <div class="login_title">Login</div>
+                <div class="detail">
+                    <label>
+                        <input
+                            type="text"
+                            placeholder="Username..."
+                            id="name" 
+                            required
+                        />
+                    </label>
+                    <label>
+                        <input
+                            type="tel"
+                            id="phone" 
+                            placeholder="phone number..." 
+                            min="1000000000" 
+                            max="9999999999" 
+                            oninvalid="this.setCustomValidity('Number must be of 10 digits')"
+                            required
+                        />
+                    </label>
+                    <label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Email address..."
+                            style="text-transform: none"
+                            required
+                        />
+                    </label>
+                    <label>
+                        <input
+                            type="text"
+                            id="address"
+                            placeholder="Address..."
+                            required
+                        />
+                    </label>
+                    <label>
+                        <input
+                            type="password"
+                            id="pass"
+                            placeholder="Password..."
+                            required
+                        />
+                    </label>
+                </div>
+                <div class="bottom">
+                    <input type="reset" id="reset" />
+                    <input type="Submit" id="login" />
+                </div>
+            </form>
+        </div>
+        <script>
+            const submitLogin = () => {
+                let name = document.getElementById('name').value;
+                let phone = document.getElementById('phone').value;
+                let email = document.getElementById('email').value;
+                let address = document.getElementById('address').value;
+                let pass = document.getElementById('pass').value;
+                
+                window.sessionStorage.setItem('name',name);
+                window.sessionStorage.setItem('phone',phone);
+                window.sessionStorage.setItem('email',email);
+                window.sessionStorage.setItem('address',address);
+
+                console.log('done');
+            };
+        </script>
+        <noscript>JavaScript not supported</noscript>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+@import url(./all.css);
+
+.userCard {
+    width: 35%;
+    margin: 5rem auto;
+    background-color: #fff;
+    border-radius: 7rem;
+    box-shadow: 0 0 1.5rem 0.1rem #3C096C;
+    color: #10002B;
+    transition-duration: 1s;
+    padding-top: 3rem;
+}
+.userCard:hover {
+    scale: 1.1;
+}
+.face {
+    display: grid;
+    place-items: center;
+    margin: 2rem;
+}
+.face i {
+    font-size: 7rem;
+}
+.detail {
+    text-align: center;
+    margin: 1rem; padding: 1rem 0 2rem;
+    font-size: 1.5rem;
+}
+.detail h3 {
+    margin: 1rem;
+    word-break: break-all;     
+}
+.detail h3 span {
+    color: #5A189A;
+}
+.btn {
+    display: block;
+    margin: 0 auto;
+    width: 15rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.3rem #3C096C;
+}
+#cart {
+    display: none;
+}
+#cart:target {
+    display: block;
+}
+.card {
+    background-color: #fff;
+}
+
+/*cart*/
+#cart h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5rem 0; padding-top: 2rem;
+    border-top: 0.3rem solid #000;
+    color: #240046;
+}
+#cart .bill {
+    width: 95%;
+    margin: 4rem auto; padding: 1rem;
+    background-color: white;
+    background-color: #fff;
+    border-radius: 7rem;
+    box-shadow: 0 0 1.5rem 0.1rem #3C096C;
+    color: #10002B;
+}
+#cart .bill table {
+    width: 100%;
+    padding: 2rem;
+}
+#cart table th {
+    width: 30%;
+    text-align: center;
+    border-bottom: 0.3rem solid;
+    padding: 1rem;
+    font-size: 2.1rem;
+}
+#cart table td {
+    width: 30%;
+    font-size: 1.8rem;
+    text-align: center;
+    border-bottom: 0.3rem solid;
+    padding: 1rem;
+}
+#cart table button {
+    font-size: 1.8rem;
+    padding: 0.3rem 0.9rem;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #10002B;
+    margin: 0 1rem;
+}
+#b1 {
+    background-color: gold;
+}
+#b1:hover {
+    background-color: goldenrod;
+}
+#b2 {
+    background-color: lime;
+}
+#b2:hover {
+    background-color: limegreen;
+}
+#b3 {
+    background-color: red;
+    float: right;
+}
+#b3:hover {
+    background-color: maroon;
+}
+.selected {
+    box-shadow: 0px 0px 2.5rem lime;
+}
+
+@media only screen and (max-width: 600px) {
+    .userCard {
+        width: 85%;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 850px) {
+    .userCard {
+        width: 70%;
+    }
+}

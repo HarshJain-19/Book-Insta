@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Insta 📚 Profile</title>
+    <link rel="icon" href="../Media/favicon book.gif" />
+    <link rel="stylesheet" href="../Styles/style profile and cart.css">
+    <script src="https://kit.fontawesome.com/fa4f3800e4.js" crossorigin="anonymous"></script>
+</head>
+<body bgcolor="DCFFB7">
+    <div class="userCard">
+        <h1 style="text-align: center;">User Profile</h1>
+        <div class="face">
+            <i class="fa fa-smile-o" aria-hidden="true"></i>
+        </div>
+        <div class="detail">
+            <h3>Name :- <span id="name"></span></h3>
+            <h3>Mobile Number :- <span id="phone"></span></h3>
+            <h3>Email :- <span id="email"></span></h3>
+            <h3>Address :- <span id="address"></span></h3>
+            <h3>Password :- <span>******</span></h3>
+            <a href="../Yobs Home.html" style="color: red;">Logout</a>
+        </div>
+    </div>
+    <a href="./Yobs Store.html" class="btn">Go to Store</a>
+    <hr>
+
+    <div id="cart">
+        <h1>Your Cart</h1>
+        <div class="bill">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="record"></tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th> Total amount: </th>
+                        <th id="total_amount"></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <a href="./Yobs Credit Card.html" style="margin-top: 5rem;" target="_blank" class="btn">Pay</a>
+        <h1></h1>
+    </div>
+
+    <script src="../Script/showBooks.js"></script>    
+    <script>
+        document.getElementById("name").innerText=window.sessionStorage.getItem('name');
+        document.getElementById("phone").innerText=window.sessionStorage.getItem('phone');
+        document.getElementById("email").innerText=window.sessionStorage.getItem('email');
+        document.getElementById("address").innerText=window.sessionStorage.getItem('address');
+    </script>
+    <script src="../Script/cart.js"></script>
+    <noscript>JavaScript not supported</noscript>
+</body>
+</html>
+
+
+
