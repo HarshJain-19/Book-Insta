@@ -12,6 +12,7 @@
     font-family: 'Bungee', cursive; font-size: 3rem;
     color: #5A189A; background-color: #E0AAFF;
     letter-spacing: 1rem; word-spacing: 1.5rem;
+    padding-top: 0.5rem;
 }
 .head_store img {
     width: 50px;
@@ -58,7 +59,7 @@
 @media only screen and (max-width: 600px) {
     .head_store {
         font-size: 2rem;
-        padding-bottom: 0.7rem;
+        padding: 1rem 0 0.7rem;
     }
     .head_store img {
         width: 35px;
