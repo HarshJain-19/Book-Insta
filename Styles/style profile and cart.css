@@ -1,3 +1,4 @@
+
 @import url(./all.css);
 
 .userCard {
@@ -5,15 +6,19 @@
     margin: 5rem auto;
     background-color: #fff;
     border-radius: 7rem;
-    box-shadow: 0 0 1.5rem 0.1rem #3C096C;
+    -webkit-box-shadow: 0 0 1.5rem 0.1rem #3C096C;
+            box-shadow: 0 0 1.5rem 0.1rem #3C096C;
     color: #10002B;
-    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
     padding-top: 3rem;
 }
 .userCard:hover {
     scale: 1.1;
 }
 .face {
+    display: -ms-grid;
     display: grid;
     place-items: center;
     margin: 2rem;
@@ -40,7 +45,8 @@
     text-align: center;
     font-size: 2rem;
     border-radius: 2rem;
-    box-shadow: 0 0 0.3rem #3C096C;
+    -webkit-box-shadow: 0 0 0.3rem #3C096C;
+            box-shadow: 0 0 0.3rem #3C096C;
 }
 #cart {
     display: none;
@@ -66,7 +72,8 @@
     background-color: white;
     background-color: #fff;
     border-radius: 7rem;
-    box-shadow: 0 0 1.5rem 0.1rem #3C096C;
+    -webkit-box-shadow: 0 0 1.5rem 0.1rem #3C096C;
+            box-shadow: 0 0 1.5rem 0.1rem #3C096C;
     color: #10002B;
 }
 #cart .bill table {
@@ -115,7 +122,8 @@
     background-color: maroon;
 }
 .selected {
-    box-shadow: 0px 0px 2.5rem lime;
+    -webkit-box-shadow: 0px 0px 2.5rem lime;
+            box-shadow: 0px 0px 2.5rem lime;
 }
 
 @media only screen and (max-width: 600px) {

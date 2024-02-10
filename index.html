@@ -16,7 +16,7 @@
         </div>
         <div id="login_form">
             <form
-                action="./Components/Yobs Profile and Cart.html" 
+                action="./Components/Yobs Profile and Cart.html"
                 onsubmit="submitLogin()"
             >
                 <a href="#" class="close">&times;</a>
@@ -26,17 +26,17 @@
                         <input
                             type="text"
                             placeholder="Username..."
-                            id="name" 
+                            id="name"
                             required
                         />
                     </label>
                     <label>
                         <input
                             type="tel"
-                            id="phone" 
-                            placeholder="phone number..." 
-                            min="1000000000" 
-                            max="9999999999" 
+                            id="phone"
+                            placeholder="phone number..."
+                            min="1000000000"
+                            max="9999999999"
                             oninvalid="this.setCustomValidity('Number must be of 10 digits')"
                             required
                         />
@@ -75,18 +75,18 @@
         </div>
         <script>
             const submitLogin = () => {
-                let name = document.getElementById('name').value;
-                let phone = document.getElementById('phone').value;
-                let email = document.getElementById('email').value;
-                let address = document.getElementById('address').value;
-                let pass = document.getElementById('pass').value;
-                
-                window.sessionStorage.setItem('name',name);
-                window.sessionStorage.setItem('phone',phone);
-                window.sessionStorage.setItem('email',email);
-                window.sessionStorage.setItem('address',address);
+                let name = document.getElementById("name").value;
+                let phone = document.getElementById("phone").value;
+                let email = document.getElementById("email").value;
+                let address = document.getElementById("address").value;
+                let pass = document.getElementById("pass").value;
 
-                console.log('done');
+                window.sessionStorage.setItem("name", name);
+                window.sessionStorage.setItem("phone", phone);
+                window.sessionStorage.setItem("email", email);
+                window.sessionStorage.setItem("address", address);
+
+                console.log("done");
             };
         </script>
         <noscript>JavaScript not supported</noscript>

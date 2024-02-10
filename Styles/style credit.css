@@ -1,3 +1,4 @@
+
 @import url(./all.css);
 
 /*Yobs Credit Card.html*/
@@ -14,6 +15,18 @@
     font-size: 3.5rem;
     color: rgb(172, 87, 3);
     text-align: center;
+}
+.c_card input::-webkit-input-placeholder {
+    color: peru;
+}
+.c_card input::-moz-placeholder {
+    color: peru;
+}
+.c_card input:-ms-input-placeholder {
+    color: peru;
+}
+.c_card input::-ms-input-placeholder {
+    color: peru;
 }
 .c_card input::placeholder {
     color: peru;

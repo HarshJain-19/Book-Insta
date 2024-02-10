@@ -1,11 +1,17 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
 
 * {
     margin: 0; padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
     border: none; outline: none; text-decoration: none;
+}
+*::-moz-selection {
+    color: #fff;
+    background-color: #240046;
 }
 *::selection {
     color: #fff;
@@ -23,6 +29,8 @@ html {
     cursor: pointer;
 }
 .btn:hover {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#7B2CBF),to(#3C096C));
+    background-image: -o-linear-gradient(bottom right, #7B2CBF,#3C096C);
     background-image: linear-gradient(to top left, #7B2CBF,#3C096C); color: white;
 }
 
