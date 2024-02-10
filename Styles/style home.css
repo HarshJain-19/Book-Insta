@@ -135,6 +135,16 @@
     #login_form label input {
         font-size: 2rem;
     }
+    #c_name h1 {
+        font-size: 2.8rem;
+        word-break: break-all;
+    }
+    #c_name h2 {
+        font-size: 2rem;
+    }
+    #c_name button {
+        font-size: 2rem;
+    }
 }
 @media only screen and (min-width: 600px) and (max-width: 900px) {
     #login_form {

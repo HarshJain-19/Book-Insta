@@ -93,7 +93,7 @@
     color: #fff;
     border-radius: 50%;
     border: 1px solid #10002B;
-    margin: 0 1rem;
+    margin: 0.5rem 1rem 0;
 }
 #b1 {
     background-color: gold;
@@ -121,6 +121,17 @@
 @media only screen and (max-width: 600px) {
     .userCard {
         width: 85%;
+    }
+    #cart table th {
+        font-size: 1.7rem;
+    }
+    #cart table td {
+        font-size: 1.4rem;
+    }
+    #cart table button {
+        font-size: 2rem;
+        padding: 0.1rem 0.7rem;
+        margin: 0.7rem 0.2rem 0;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 850px) {

@@ -43,8 +43,46 @@
     display: block; margin: 2rem auto; padding: 1.5rem;
     font-size: 3rem; letter-spacing: 0.77rem;
     background-color: peru; color: white;
-    border: 0.5rem solid;
 }
 .c_card button:hover {
     background-color: #fff; color: peru;
+}
+
+@media only screen and (max-width: 500px) {
+    .c_card {
+        width: 90%;
+        margin: 7rem auto;
+    }
+    .c_card legend {
+        font-size: 2.5rem;
+    }
+    .c_card label {
+        font-size: 1.5rem;
+    }
+    .c_card label input {
+        font-size: 1.4rem;
+    }
+    .c_card button {
+        padding: 1.2rem;
+        font-size: 2.5rem; letter-spacing: 0.5rem;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 950px) {
+    .c_card {
+        width: 60%;
+        margin: 7rem auto;
+    }
+    .c_card legend {
+        font-size: 2.5rem;
+    }
+    .c_card label {
+        font-size: 1.5rem;
+    }
+    .c_card label input {
+        font-size: 1.4rem;
+    }
+    .c_card button {
+        padding: 1.2rem;
+        font-size: 2.5rem; letter-spacing: 0.5rem;
+    }
 }

@@ -28,12 +28,12 @@ const addRecord = () => {
             <tr>
                 <td style="text-transform: capitalize;">${booksCollection[k].name}</td>
                 <td>
+                    <span>${choice[k]}</span><br />
                     <button id="b1" onclick='dec(${k})'>-</button>
-                    <span>${choice[k]}</span>
                     <button id="b2" onclick="inc(${k})">+</button>
                 </td>
                 <td>
-                    ₹<span'>${booksCollection[k].price*choice[k]}</span>
+                    ₹<span>${booksCollection[k].price*choice[k]}</span><br />
                     <button id="b3" onclick='remove(${k})'>x</button>
                 </td>
             </tr>
